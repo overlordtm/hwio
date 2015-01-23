@@ -91,7 +91,6 @@ func (module *AriaGPIOModule) PinMode(pin Pin, mode PinIOMode) error {
 	}
 
 	if mode == OUTPUT {
-		fmt.Printf("about to set pin %d to output\n", pin)
 		e = openPin.gpioDirection("out")
 		if e != nil {
 			return e

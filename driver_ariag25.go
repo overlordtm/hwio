@@ -23,6 +23,7 @@ func (d *AriaG25Driver) makePin(names []string, modules []string, gpioLogical in
 func (d *AriaG25Driver) createPinData() {
 	d.ariaPins = []*AriaPin{
 		d.makePin([]string{"PA22"}, []string{"gpio"}, 22),
+		d.makePin([]string{"PA28"}, []string{"gpio"}, 28),
 	}
 }
 
